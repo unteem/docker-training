@@ -1,0 +1,48 @@
+- Introduction a Docker
+ - Rappel sur le Cloud
+ - Rappel sur DevOps
+ - Docker
+- Installation
+ - Sur son environnement
+ - Docker-Machine
+- Basics
+- Image creation
+ - command line
+ - Dockerfile
+ - Packer
+- container runtime
+ - command line argument
+- Concepts avances
+ - Multi-process conteneur
+ - monitoring
+ - User
+ - PID 1
+ - Data
+ - Logs
+ - local storage
+
+#### Jour 2 - Orchestration et production
+
+- Orchestration
+ - Lier ses conteneurs
+ - Ambassadeurs
+ - libswarm
+- Docker-compose
+ - Installation
+ - Creation d'une infrastructure sous docker compose
+- Les autres outils d'orchestration
+- API Docker
+- Limitations et futur de Docker
+
+http://crosbymichael.com/dockerfile-best-practices.html
+http://crosbymichael.com/dockerfile-best-practices-take-2.html
+https://docs.docker.com/articles/dockerfile_best-practices/
+
+versionner sur GIT
+
+Se documenter:
+ - docker user
+ - PID 1
+ - concern separation
+ - docker monitoring
+ - docker logging
