@@ -1,0 +1,26 @@
+{
+  "builders": [
+    {
+      "type": "docker",
+      "image": "debian",
+      "commit": true
+   }
+  ],
+
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "test.sh"
+    }
+  ],
+
+  "post-processors": [
+    [
+      {
+        "type": "docker-import",
+        "repository": "pierreozoux/test",
+        "tag": "0.7"
+      }
+    ]
+  ]
+}

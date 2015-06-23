@@ -26,7 +26,7 @@
 - Orchestration
  - Lier ses conteneurs
  - Ambassadeurs
- - libswarm
+ - swarm
 - Docker-compose
  - Installation
  - Creation d'une infrastructure sous docker compose
@@ -40,9 +40,3 @@ https://docs.docker.com/articles/dockerfile_best-practices/
 
 versionner sur GIT
 
-Se documenter:
- - docker user
- - PID 1
- - concern separation
- - docker monitoring
- - docker logging

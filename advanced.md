@@ -53,6 +53,7 @@ You can and should specify the USER that execute the command.
 
 Be careful of the PID1.
 
+[zombie reaping problem](https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/)
 
 
 ## Data
@@ -105,5 +106,7 @@ expose the UDP port to inside the container
 how to manage locally images, containers and volume!
 
 docker ps
+
 docker images
+
 docker volumes

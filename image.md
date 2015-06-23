@@ -1,6 +1,7 @@
 # Image
 
 
+
 # Creation
 
 
@@ -19,14 +20,22 @@ We'll not detail this one because we are DevOps.
 
 ## Dockerfile
 
-[Command reference](https://doc)
+[Command reference](http://docs.docker.com/reference/builder/)
 
 RUN
+
 COPY
-CMD
+
+CMD / ENTRYPOINT
 
 
-## 10 best practices
+## best practices
+
+https://docs.docker.com/articles/dockerfile_best-practices/
+
+http://crosbymichael.com/dockerfile-best-practices.html
+
+http://crosbymichael.com/dockerfile-best-practices-take-2.html
 
 
 ## Packer!
@@ -46,6 +55,7 @@ Dockerfile RUN bash feels hacky right?
 + layers
 - bash feels hacky :/
 
+
 ### Packer
 
 + You can reuse your recipes (past, future)
@@ -61,4 +71,5 @@ Pick an app, and dockerize it!
 
 If you don't know which one, here is the list!
 
-https://github.com/indiepaas/indiepaas/issues
+https://github.com/IndiePaaS/IndiePaaS/labels/needs%20dockerfile
+
