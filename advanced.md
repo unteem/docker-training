@@ -24,7 +24,7 @@ init system
  - sshd? seriously?
  - postfix case, couldn't avoid multiprocess
  - forking daemon like HAproxy
-
+ - pod?
 
 
 ## Monitoring
@@ -54,6 +54,7 @@ You can and should specify the USER that execute the command.
 Be careful of the PID1.
 
 [zombie reaping problem](https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/)
+
 
 
 ## Data
@@ -110,6 +111,7 @@ docker ps
 docker images
 
 docker volumes
+
 
 
 # docker exec

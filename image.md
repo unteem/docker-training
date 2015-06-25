@@ -5,6 +5,7 @@
 # Creation
 
 
+
 ## Command line
 
 ```bash
@@ -16,6 +17,7 @@ docker commit
 
 
 We'll not detail this one because we are DevOps.
+
 
 
 ## Dockerfile
@@ -38,12 +40,45 @@ http://crosbymichael.com/dockerfile-best-practices.html
 http://crosbymichael.com/dockerfile-best-practices-take-2.html
 
 
+
 ## Packer!
 
 You can use chef/puppet/ansible \o/
 
 Note:
 Dockerfile RUN bash feels hacky right?
+
+
+## Example
+```
+{
+  "builders": [
+    {
+      "type": "docker",
+      "image": "debian",
+      "commit": true
+   }
+  ],
+
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "test.sh"
+    }
+  ],
+
+  "post-processors": [
+    [
+      {
+        "type": "docker-import",
+        "repository": "pierreozoux/test",
+        "tag": "0.7"
+      }
+    ]
+  ]
+}
+```
+
 
 
 ## Conclusion
@@ -60,7 +95,7 @@ Dockerfile RUN bash feels hacky right?
 
 + You can reuse your recipes (past, future)
 + feels right
-- you stil need Docker to add VOLUME, CMD or PORT
+- you still need Docker to add VOLUME, CMD or PORT
 - layers (future?)
 
 

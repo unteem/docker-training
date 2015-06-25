@@ -1,6 +1,8 @@
 # Runtime
 
-arguments:
+`docker run [options] image [command]`
+
+options:
  - --name
  - -it
  - --rm
