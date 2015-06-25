@@ -110,3 +110,10 @@ docker ps
 docker images
 
 docker volumes
+
+
+# docker exec
+
+execute a process on the side of the main process.
+
+/!\ ENV variables
