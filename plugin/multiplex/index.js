@@ -4,6 +4,13 @@ var io			= require('socket.io');
 var crypto		= require('crypto');
 
 var app			= express.createServer();
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 var staticDir	= express.static;
 
 io				= io.listen(app);
