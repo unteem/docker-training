@@ -27,6 +27,7 @@ init system
  - pod?
 
 
+
 ## Monitoring
 
 docker can 'monitor' processes for you
@@ -112,6 +113,7 @@ docker images
 
 docker volumes
 
+https://microblog.pierre-o.fr/2015/i-know-how-to-clean-docker
 
 
 # docker exec
