@@ -43,46 +43,6 @@ https://github.com/docker-library/official-images/
 
 
 
-## Packer!
-
-You can use chef/puppet/ansible \o/
-
-Note:
-Dockerfile RUN bash feels hacky right?
-
-
-## Example
-```
-{
-  "builders": [
-    {
-      "type": "docker",
-      "image": "debian",
-      "commit": true
-   }
-  ],
-
-  "provisioners": [
-    {
-      "type": "shell",
-      "script": "test.sh"
-    }
-  ],
-
-  "post-processors": [
-    [
-      {
-        "type": "docker-import",
-        "repository": "pierreozoux/test",
-        "tag": "0.7"
-      }
-    ]
-  ]
-}
-```
-
-
-
 ## Conclusion
 
 
@@ -93,20 +53,23 @@ Dockerfile RUN bash feels hacky right?
 - bash feels hacky :/
 
 
-### Packer
 
-+ You can reuse your recipes (past, future)
-+ feels right
-- you still need Docker to add VOLUME, CMD or PORT
-- layers (future?)
+# Case study
 
+Postgres
 
 
 # Your turn!
 
-Pick an app, and dockerize it!
-
-If you don't know which one, here is the list!
-
-https://github.com/IndiePaaS/IndiePaaS/labels/needs%20dockerfile
-
+```
+mkdir -p ~/docker-training/apache
+cd ~/docker-training/apache
+git init
+echo 'hello worl' > index.html'
+# Make an apache Dockerfile to serve this file
+# 1. dev your Dockerfile
+# 2. commit your work
+# 3. build
+# 4. test
+# 5. GOTO 1
+```

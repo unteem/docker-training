@@ -2,7 +2,7 @@
 
 ### [Pierre Ozoux](https://microblog.pierre-o.fr/)
 
-29 Juin 2015
+01 December 2015
 
 
 
@@ -189,7 +189,8 @@ Run admin/management tasks as one-off processes
 
  - BSD Jail
  - Solaris Zones
- - LXC / OpenVZ and now Docker
+ - LXC / OpenVZ
+ - Docker/rkt/nspawn
 
 
 ## What is Docker?

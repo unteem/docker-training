@@ -51,3 +51,5 @@ docker-compose rm
 
 
 ## Your turn!
+
+Make the full app working!

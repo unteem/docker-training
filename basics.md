@@ -71,8 +71,8 @@ Docker Registry stores and distributes images centrally. It's where you push ima
 ## Dockerfile
 
 ```bash
-mkdir /tmp/docker1
-cat > /tmp/docker1/Dockerfile <<EOF
+mkdir -p ~/docker-training/basics && cd ~/docker-training/basics
+cat > Dockerfile <<EOF
 FROM debian:jessie
 CMD echo hello world
 EOF
@@ -82,6 +82,10 @@ docker run myimage
 ```
 
 
-## Image sharing
+## Image sharing / registry
 
 You could `docker push` but I prefer git!
+
+Note:
+docker commit && docker push
+vi Dockerfile && git commit && git push

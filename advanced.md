@@ -46,7 +46,7 @@ That's what some people don't like
 
 ## User
 
-You can and should specify the USER that execute the command.
+You should specify the USER that execute the command and own the data.
 
 
 
@@ -70,7 +70,14 @@ You could link a container that will just contain the data.
 
 `docker run -v /host/path:/guest/path debian cat /guest/path/file`
 
-This is the way :)
+
+### Docker volume
+
+You can now create volumes managed by docker.
+
+`docker volume create my_name`
+
+This is now the way. (drivers are coming \o/)
 
 
 
@@ -79,7 +86,15 @@ This is the way :)
 
 ## Stdout/Stderr
 
-The best!
+The recommended!
+
+
+## Special Log file
+
+```
+RUN ln -sf /dev/stdout /var/log/nginx/access.log
+RUN ln -sf /dev/stderr /var/log/nginx/error.log
+```
 
 
 ## Log file
@@ -111,7 +126,7 @@ docker ps
 
 docker images
 
-docker volumes
+docker volume
 
 https://microblog.pierre-o.fr/2015/i-know-how-to-clean-docker
 
@@ -119,3 +134,7 @@ https://microblog.pierre-o.fr/2015/i-know-how-to-clean-docker
 # docker exec
 
 execute a process on the side of the main process.
+
+
+
+# Your turn - Tomcat!

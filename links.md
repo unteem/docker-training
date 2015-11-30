@@ -97,3 +97,6 @@ Linking a container will expose all local environment to the linked container.
 
 
 ## Your turn!
+
+Mount volume from tomcat inside apache.
+Link tomcat to be able to communicate with postgres.
