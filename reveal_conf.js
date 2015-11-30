@@ -13,8 +13,8 @@ Reveal.initialize({
   transition: 'slide', // none/fade/slide/convex/concave/zoom
   multiplex: {
     secret: null, // null so the clients do not have control of the master presentation
-    id: 'cccfdf77911fdb22', // id, obtained from socket.io server
-    url: 'presentations.pierre-o.fr:443' // Location of socket.io server
+    id: 'ef1fbc8686178b0e', // id, obtained from socket.io server
+    url: 'https://presentations.pierre-o.fr:443' // Location of socket.io server
   },
   // Optional reveal.js plugins
   dependencies: [
