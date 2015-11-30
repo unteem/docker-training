@@ -119,5 +119,3 @@ https://microblog.pierre-o.fr/2015/i-know-how-to-clean-docker
 # docker exec
 
 execute a process on the side of the main process.
-
-/!\ ENV variables

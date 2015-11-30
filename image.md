@@ -39,6 +39,8 @@ http://crosbymichael.com/dockerfile-best-practices.html
 
 http://crosbymichael.com/dockerfile-best-practices-take-2.html
 
+https://github.com/docker-library/official-images/
+
 
 
 ## Packer!
