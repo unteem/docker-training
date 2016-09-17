@@ -65,7 +65,7 @@ Postgres
 mkdir -p ~/docker-training/apache
 cd ~/docker-training/apache
 git init
-echo 'hello worl' > index.html'
+echo 'hello world' > index.html
 # Make an apache Dockerfile to serve this file
 # 1. dev your Dockerfile
 # 2. commit your work

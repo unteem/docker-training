@@ -75,7 +75,7 @@ You could link a container that will just contain the data.
 
 You can now create volumes managed by docker.
 
-`docker volume create my_name`
+`docker volume create --name=my_name`
 
 This is now the way. (drivers are coming \o/)
 
@@ -129,6 +129,8 @@ docker images
 docker volume
 
 https://microblog.pierre-o.fr/2015/i-know-how-to-clean-docker
+
+https://github.com/spotify/docker-gc
 
 
 # docker exec

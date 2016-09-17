@@ -4,6 +4,8 @@
 
 01 December 2015
 
+(Powered by docker)
+
 
 
 # A Brief history of the cloud 

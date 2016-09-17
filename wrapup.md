@@ -18,6 +18,8 @@ https://github.com/weihanwang/docker-ecosystem-survey
 
 https://github.com/hangyan/docker-resources
 
+https://github.com/veggiemonk/awesome-docker/pull/107/files
+
 
 
 ## limitations and futur
@@ -25,3 +27,4 @@ https://github.com/hangyan/docker-resources
  - logs
  - PID1
  - http://opencontainers.org/
+ - [unikernels](https://youtu.be/ZBcMy-_xuYk) \o/

@@ -46,7 +46,7 @@ docker-compose stop
 docker-compose rm
 ```
 
-[reference](http://docs.docker.com/compose/cli/)
+[reference](http://docs.docker.com/compose/reference/overview/)
 
 
 
