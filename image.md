@@ -5,7 +5,6 @@
 # Creation
 
 
-
 ## Command line
 
 ```bash
@@ -50,26 +49,7 @@ https://github.com/docker-library/official-images/
 
 + starts to be broadly adopted
 + layers
-- bash feels hacky :/
 
-
-
-# Case study
-
-Postgres
 
 
 # Your turn!
-
-```
-mkdir -p ~/docker-training/apache
-cd ~/docker-training/apache
-git init
-echo 'hello world' > index.html
-# Make an apache Dockerfile to serve this file
-# 1. dev your Dockerfile
-# 2. commit your work
-# 3. build
-# 4. test
-# 5. GOTO 1
-```

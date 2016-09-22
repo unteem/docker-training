@@ -2,6 +2,16 @@
 
 
 
+## Namespace
+
+ - NET
+ - PID
+ - USER
+ - Mount
+ - UTS
+
+
+
 ## Multiprocess
 
 2 schools:
@@ -24,23 +34,7 @@ init system
  - sshd? seriously?
  - postfix case, couldn't avoid multiprocess
  - forking daemon like HAproxy
- - pod?
-
-
-
-## Monitoring
-
-docker can 'monitor' processes for you
-
---always-restart flag
-
-Note:
-That's what some people don't like
-
-
-### do not monitor the client
-
-`docker run` is just an API call.
+ - pod
 
 
 
@@ -48,36 +42,45 @@ That's what some people don't like
 
 You should specify the USER that execute the command and own the data.
 
-
-
-## PID 1
-
-Be careful of the PID1.
-
-[zombie reaping problem](https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/)
+If you don't it is fine, Namespace translations!
 
 
 
 ## Data
 
 
+### Docker volume
+
+You can create volumes managed by docker.
+
+SDS
+
+
+From Dockerfile
+
+`VOLUME myvolume`
+
+
+From runtime
+
+`docker volume create --name=my_name`
+
+
+Support for drivers \o/ (Ceph, glusterfs...)
+
+
 ### Data container
 
 You could link a container that will just contain the data.
 
+`--volumes-from`
 
-### Volume Mount
+(no longer recommended, but you might see it)
+
+
+### Host Mount
 
 `docker run -v /host/path:/guest/path debian cat /guest/path/file`
-
-
-### Docker volume
-
-You can now create volumes managed by docker.
-
-`docker volume create --name=my_name`
-
-This is now the way. (drivers are coming \o/)
 
 
 
@@ -118,19 +121,45 @@ expose the UDP port to inside the container
 
 
 
+## Monitoring
+
+docker can 'monitor' processes for you
+
+--always-restart flag
+
+Note:
+That's what some people don't like
+
+
+### do not monitor the client
+
+`docker run` is just an API call.
+
+
+
+# Central logging and Monitoring
+
+ - ELK
+ - Prometheus
+ - [Netdata](https://github.com/firehol/netdata)
+ - https://github.com/uschtwill/docker_monitoring_logging_alerting
+
+
+
 # local storage
 
-how to manage locally images, containers and volume!
-
-docker ps
+how to manage locally images, containers and volumes!
 
 docker images
 
-docker volume
+docker ps
+
+docker volumes
 
 https://microblog.pierre-o.fr/2015/i-know-how-to-clean-docker
 
 https://github.com/spotify/docker-gc
+
 
 
 # docker exec
@@ -139,4 +168,38 @@ execute a process on the side of the main process.
 
 
 
-# Your turn - Tomcat!
+# Networks
+
+You can now create and manage networks from Docker.
+SDN
+
+```
+docker network ls
+               create/rm
+               connect/disconnect             
+```
+
+
+## Features
+
+ - automatic name resolution using DNS
+ - automatic secured isolated environment for the containers in a network
+ - ability to dynamically attach and detach to multiple networks
+
+
+## Overlay
+
+An overlay network can span multiple hosts running their own engines.
+
+Needs a key-value store (Consul, Etcd, and ZooKeeper)
+
+Supports encryption \o/
+
+
+## Documentation
+
+https://docs.docker.com/engine/userguide/networking/work-with-networks/
+
+
+
+# Your turn!

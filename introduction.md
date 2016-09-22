@@ -2,9 +2,17 @@
 
 ### [Pierre Ozoux](https://microblog.pierre-o.fr/)
 
-01 December 2015
+28 Septembre 2016
 
 (Powered by docker)
+
+
+
+# Demo with objectives of the session
+
+ - Have a full CI/CD pipeline
+ - one commit -> one docker deploy
+ - and this runs on a cluster
 
 
 
@@ -45,7 +53,7 @@ Software as a Service
 
 Free Software as a Service :)
 
-(Owncloud, Wordpress..)
+(Nextcloud, WordPress..)
 
 
 
@@ -230,3 +238,43 @@ from [docker-jumpstart](https://github.com/odewahn/docker-jumpstart)
 
 ![Docker](/images/docker.png)
 
+
+
+## The challenge
+
+![challenge](/docker-img/the-challenge.png)
+
+
+## The matrix from hell
+
+![matrixhell](/docker-img/the-matrix-from-hell.png)
+
+
+## Cargo transport pre 1960
+
+![cargo](/docker-img/cargo.png)
+
+
+## Also a matrix from hell!
+
+![also](/docker-img/also.png)
+
+
+## Solution: Intermodal shipping container
+
+![solution](/docker-img/solution.png)
+
+
+## Docker is a container system for code
+
+![docker](/docker-img/shipping.png)
+
+
+## Docker eliminated the matrix from hell
+
+![eliminates](/docker-img/eliminates.png)
+
+
+## Separation of concerns
+
+![separation](/docker-img/separation.png)

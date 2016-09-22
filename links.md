@@ -1,5 +1,7 @@
 # Docker links
 
+(deprecated but important to see)
+
 
 
 ## Name is important!
@@ -93,10 +95,3 @@ cat /etc/hosts
 Linking a container will expose all local environment to the linked container.
 
 `<alias>_ENV_<name>`
-
-
-
-## Your turn!
-
-Mount volume from tomcat inside apache.
-Link tomcat to be able to communicate with postgres.

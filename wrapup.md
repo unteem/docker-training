@@ -2,6 +2,10 @@
 
 
 
+# 12 factor quizz!
+
+
+
 ## API
 
 http://docs.docker.com/reference/api/docker_remote_api/
@@ -18,13 +22,13 @@ https://github.com/weihanwang/docker-ecosystem-survey
 
 https://github.com/hangyan/docker-resources
 
-https://github.com/veggiemonk/awesome-docker/pull/107/files
+https://github.com/veggiemonk/awesome-docker/
 
 
 
-## limitations and futur
+## futur challenges
 
- - logs
- - PID1
- - http://opencontainers.org/
- - [unikernels](https://youtu.be/ZBcMy-_xuYk) \o/
+ - k8s vs swarm
+ - volume/data/db challenge
+ - http://opencontainers.org/ vs fork ?
+ - https://cncf.io/
