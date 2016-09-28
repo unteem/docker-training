@@ -1,0 +1,21 @@
+variables:
+  REGISTRY: gitlab.local:5000
+
+stages:
+  - build
+  - deploy
+
+build:
+  image: docker:latest
+  stage: build
+  script:
+    - docker build -t $REGISTRY/pierre/test .
+    - docker push $REGISTRY/pierre/test
+  tags:
+    - docker
+deploy:
+  image: docker:latest
+  stage: deploy
+  script:
+    - docker rm -f moby_web_1
+    - docker run -d --name moby_web_1 --link moby_redis_1:redis -p 8080:80 $REGISTRY/pierre/test

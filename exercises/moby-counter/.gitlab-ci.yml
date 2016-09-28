@@ -1,0 +1,21 @@
+variables:
+  REGISTRY: gitlab.local:5000
+
+stages:
+  - build
+  - deploy
+
+build:
+  image: docker:latest
+  stage: build
+  script:
+    - docker build
+    - docker push
+  tags:
+    - docker
+deploy:
+  image: docker:latest
+  stage: deploy
+  script:
+    - docker-compose rm -f
+    - docker-compose
