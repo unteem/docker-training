@@ -2,10 +2,9 @@
 
 Put an nginx proxy in front of Moby counter.
 
-We'll use docker-gen and nginx-proxy for that.
-Start nginx-proxy.
+We'll use [nginx-proxy ](https://github.com/jwilder/nginx-proxy)for that.
 
-Modify the compose file accordingly.
+Read [usage](https://github.com/jwilder/nginx-proxy/#usage), start it, and modify moby compose file accordingly.
 
 # etcd
 
@@ -27,14 +26,13 @@ curl https://discovery.etcd.io/new?size=3
 
 On 3 nodes, execute the following:
 
-export IP=`curl -s http://icanhazip.com/`
+export IP=$private_ip
 etcd --discovery "https://discovery.etcd.io/361d5e33c57cdd89a3f7f22ae1177f34" \
      --name $(hostname) \
      --advertise-client-urls "http://$IP:2379" \
      --initial-advertise-peer-urls "http://$IP:2380" \
      --listen-client-urls "http://$IP:2379" \
      --listen-peer-urls "http://$IP:2380" &
-
 
 
 ## Tests

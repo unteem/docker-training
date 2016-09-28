@@ -99,6 +99,8 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 ```
 
+Like on [nginx](https://github.com/nginxinc/docker-nginx/blob/master/stable/jessie/Dockerfile#L22-L23)
+
 
 ## Log file
 
@@ -118,6 +120,14 @@ mount /dev/log from host/another container
 ### 2nd way
 
 expose the UDP port to inside the container
+
+
+## If sending logs to stdoud/stderr
+
+Then you can specify a [log driver](https://docs.docker.com/engine/admin/logging/overview/) to docker:
+ - syslog
+ - journald
+ - gelf
 
 
 

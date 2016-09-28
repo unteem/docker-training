@@ -1,6 +1,6 @@
 # Namespace
 
-Start a debian intereactive container and run the following commands:
+Start a bash inside a debian interactive container and run the following commands:
 (Compare to what you see on the host)
 
  - NET: ifconfig -a
@@ -41,15 +41,18 @@ Start an nginx container in detach mode:
 `docker run -d nginx`
 
 Find it's name and exec a bash on its side.
+Cat the current index.html.
 (used to debug inside containers)
 
 `docker exec --help`
 
 # Network
 
-Create an nginx image with the configuration of this folder.
+The objective is to serve grunt though nginx proxy.
 
-Create a container to proxy the grunt conainer.
+Create an nginx image with the configuration in this folder.
+
+Create an nginx container to proxy the grunt conainer.
 The 2 containers have to be in an isolated network.
 
 help: https://docs.docker.com/engine/userguide/networking/work-with-networks/

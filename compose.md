@@ -4,7 +4,7 @@
 
 ## Idea
 
-Describe an application composed of services provided by conainers.
+Describe an application composed of services provided by containers.
 
 
 

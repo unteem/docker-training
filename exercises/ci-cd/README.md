@@ -1,8 +1,8 @@
 # Gitlab
 
-Start GitLab on the swarm with the attached docker-compose.yml./
+Start GitLab on the swarm with the attached docker-compose.yml.
 
-Monitor on your laptop with `watch docker ps` pointing to the swarm.
+Monitor on your desktop with `watch docker ps` pointing to the swarm.
 
 ## Add a runner
 
@@ -40,16 +40,12 @@ create a new repo and push moby-counter to it
 
 Start moby counter on the swarm, test it.
 
-Start an nginx-proxy on all hosts.
-
-Add the relevant entry on your /etc/hosts file.
-
 Test Moby from your browser.
 
 ## Deploy
 
 Deploy it from gitlab with the associated .gitlab-ci.yml
-Modify to add your steps.
+Modify to add your build/deploy steps.
 
 
 ## Inspired from:

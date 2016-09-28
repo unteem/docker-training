@@ -1,4 +1,4 @@
-# Introduction to Docker
+# Mastering Docker
 
 ### [Pierre Ozoux](https://microblog.pierre-o.fr/)
 
@@ -8,7 +8,7 @@
 
 
 
-# Demo with objectives of the session
+# Objectives of the session
 
  - Have a full CI/CD pipeline
  - one commit -> one docker deploy
@@ -88,7 +88,7 @@ Feature request, bug tracking, Continuous deployment
 
 
 
-# 12 Factor App
+# [12 Factor App](https://12factor.net/)
 
 Developed by Heroku
 
