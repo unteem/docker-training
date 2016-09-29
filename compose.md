@@ -18,6 +18,8 @@ http://docs.docker.com/compose/install/
 
 ## Example
 
+docker-compose.yml
+
 ```
 version: '2'
 services:

@@ -1,6 +1,5 @@
 # Docker links
 
-(deprecated but important to see)
 
 
 
@@ -46,6 +45,8 @@ docker run --volumes-from data debian /bin/true
 
 
 ## Network links
+
+(old behaviour)
 
 
 ### Runtime
@@ -95,3 +96,14 @@ cat /etc/hosts
 Linking a container will expose all local environment to the linked container.
 
 `<alias>_ENV_<name>`
+
+
+
+# New link behaviour
+
+Just add an alias to a name.
+It populates /etc/hosts
+
+```
+docker run ... --link original_name:alias ...
+```

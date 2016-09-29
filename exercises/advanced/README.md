@@ -4,6 +4,7 @@ Start a bash inside a debian interactive container and run the following command
 
 ```
 docker run -it debian bash
+# install ifconfig
 apt-get update
 apt-get install -y net-tools
 ```
@@ -12,22 +13,21 @@ apt-get install -y net-tools
 
  - NET: ifconfig -a
  - PID: ps -ax
- - USER: ps -ax
+ - USER: (We'd need to configure docker daemon for that)
  - Mount: df -h
  - UTS: hostname
 
-Hint for one command, you'll need to install ifconfig (in net-tools in debian)
 
 
 # data
 
-Add the following line on our echo container:
+Add the following line on our grunt Dockerfile:
 
 ```
 VOLUME /usr/src/app
 ```
 
-rebuild your image and restart your container.
+rebuild your image and recreate your container.
 
 What do you see under `docker volume ls` command?
 
@@ -61,5 +61,6 @@ Create an nginx image with the configuration in this folder.
 
 Create an nginx container to proxy the grunt conainer.
 The 2 containers have to be in an isolated network.
+Nginx container needs to be linked to the grunt container.
 
 help: https://docs.docker.com/engine/userguide/networking/work-with-networks/

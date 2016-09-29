@@ -5,6 +5,7 @@ Put an nginx proxy in front of Moby counter.
 We'll use [nginx-proxy ](https://github.com/jwilder/nginx-proxy)for that.
 
 Read [usage](https://github.com/jwilder/nginx-proxy/#usage), start it, and modify moby compose file accordingly.
+TL;DR we need to use VIRTUAL_HOST env variable.
 
 # etcd
 
@@ -27,12 +28,13 @@ curl https://discovery.etcd.io/new?size=3
 On 3 nodes, execute the following:
 
 export IP=$private_ip
-etcd --discovery "https://discovery.etcd.io/361d5e33c57cdd89a3f7f22ae1177f34" \
+export token=""
+etcd --discovery "https://discovery.etcd.io/$token" \
      --name $(hostname) \
      --advertise-client-urls "http://$IP:2379" \
      --initial-advertise-peer-urls "http://$IP:2380" \
      --listen-client-urls "http://$IP:2379" \
-     --listen-peer-urls "http://$IP:2380" &
+     --listen-peer-urls "http://$IP:2380"
 
 
 ## Tests
@@ -124,7 +126,8 @@ docker run -d --name=swarm-agent swarm join --addr=$IP:2376 etcd://$IP:2379/node
 
 
 ## Test
-
 docker -H tcp://$node_ip:4000 ps
-docker -H tcp://$node_ip:4000 info
-docker -H tcp://$node_ip:4000 run hello-world
+export DOCKER_HOST=$node_ip:4000
+docker ps
+docker info
+docker run hello-world

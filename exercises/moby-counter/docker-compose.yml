@@ -1,7 +1,7 @@
-web:
+app:
   build: .
   ports:
-     - "80:80"
+     - "8000:80"
   links:
     - "redis:redis"
 redis:

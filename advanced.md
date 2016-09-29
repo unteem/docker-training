@@ -42,7 +42,9 @@ init system
 
 You should specify the USER that execute the command and own the data.
 
+
 If you don't it is fine, Namespace translations!
+(To configure in docker deamon)
 
 
 
@@ -181,6 +183,7 @@ execute a process on the side of the main process.
 # Networks
 
 You can now create and manage networks from Docker.
+
 SDN
 
 ```

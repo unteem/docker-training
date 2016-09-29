@@ -18,14 +18,16 @@ And try it locally.
 
 ## Migrate to v2
 
-Migrate the version of compose from v1 to v2 (and add named volumes and isolated networks).
+Migrate the version of compose from v1 to v2 (with isolated networks).
 (Check [documentation](https://docs.docker.com/compose/compose-file/#/upgrading))
-
-Make the data persistent for redis.
-(Check redis image's documentation on the hub)
 
 Start it and make sure it is working locally.
 Try to access it from your peers.
+
+Optional:
+Make the data persistent for redis.
+(with named volume)
+(Check redis image's documentation on the hub)
 
 ## Start to build the ci/cd pipeline
 

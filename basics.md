@@ -54,6 +54,9 @@ Docker Registry stores and distributes images centrally. It's where you push ima
 [source](http://docs.docker.com/registry/)
 
 
+https://hub.docker.com
+
+
 
 ## Illustration of Basics
 
