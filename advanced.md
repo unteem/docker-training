@@ -58,7 +58,7 @@ SDS
 
 From Dockerfile
 
-`VOLUME myvolume`
+`VOLUME /my/path`
 
 
 From runtime

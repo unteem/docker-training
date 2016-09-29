@@ -1,11 +1,18 @@
 # Namespace
 
 Start a bash inside a debian interactive container and run the following commands:
+
+```
+docker run -it debian bash
+apt-get update
+apt-get install -y net-tools
+```
+
 (Compare to what you see on the host)
 
  - NET: ifconfig -a
- - PID: ps -aux
- - USER: ps -aux
+ - PID: ps -ax
+ - USER: ps -ax
  - Mount: df -h
  - UTS: hostname
 
@@ -14,7 +21,7 @@ Hint for one command, you'll need to install ifconfig (in net-tools in debian)
 
 # data
 
-Add the following line on our grunt container:
+Add the following line on our echo container:
 
 ```
 VOLUME /usr/src/app
