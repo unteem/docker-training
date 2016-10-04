@@ -57,6 +57,7 @@ module.exports = function(opts){
 
         client.rpush('whales', data, function(){
           client.save(function(){
+            console.log("1 click")
             res.end('ok')  
           })
         })
