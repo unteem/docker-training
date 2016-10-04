@@ -1,10 +1,10 @@
 # Start a container
 
- - start an nginx container (use RUN)
- - see the default html page
+ - start an nginx container (use docker run)
+ - see the default nginx html page
   - with host port mapping (-p)
   - with container IP (use inspect to get local IP)
- - mount the current index.html instead of the default one (situated in /var/share/nginx/html) (-v)
+ - mount the current index.html instead of the default one (situated in /usr/share/nginx/html) (-v)
  - try to reach your peer web server!
 
 ## Help

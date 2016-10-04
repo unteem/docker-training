@@ -57,7 +57,7 @@ Cat the current index.html.
 
 The objective is to serve grunt though nginx proxy.
 
-Create an nginx image with the configuration in this folder.
+Create an nginx image with the configuration in this folder (nginx configuration is situated in /etc/nginx/nginx.conf).
 
 Create an nginx container to proxy the grunt conainer.
 The 2 containers have to be in an isolated network.

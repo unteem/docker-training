@@ -26,7 +26,7 @@ The command used to start the presentation is "grunt serve".
 (But we could also need to use grunt test)
 
 The objective is to build an image that could render this presentation.
-(You'll need FROM, RUN, WORKDIR, CMD)
+(You'll need FROM, RUN, ENTRYPOINT, CMD)
 
 I advise to use node:0.10-onbuild docker image to start from.
 

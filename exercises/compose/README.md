@@ -4,7 +4,7 @@ This first docker-compose is exactly what we built previously: grunt + nginx.
 
 Make a docker-compose.yml file to start a web server (nginx) and a grunt "application" server to serve this presentation.
 
-When issuing `docker-compose up` it should start the full stack, mount the appropriate volume, create the appropriate networks.
+When issuing `docker-compose up` it should start the full stack, create the appropriate networks.
 
 # Moby Couter
 

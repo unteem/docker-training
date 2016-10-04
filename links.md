@@ -102,7 +102,8 @@ Linking a container will expose all local environment to the linked container.
 # New link behaviour
 
 Just add an alias to a name.
-It populates /etc/hosts
+
+It populates an internal DNS
 
 ```
 docker run ... --link original_name:alias ...

@@ -67,6 +67,8 @@ From runtime
 
 `docker volume create --name=my_name`
 
+`docker run -v mon_nom:/path_container ...`
+
 
 Support for drivers \o/ (Ceph, glusterfs...)
 

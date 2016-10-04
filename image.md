@@ -23,6 +23,8 @@ We'll not detail this one because we are DevOps.
 
 [Command reference](http://docs.docker.com/reference/builder/)
 
+FROM
+
 RUN
 
 COPY

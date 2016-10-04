@@ -33,8 +33,8 @@ etcd --discovery "https://discovery.etcd.io/$token" \
      --name $(hostname) \
      --advertise-client-urls "http://$IP:2379" \
      --initial-advertise-peer-urls "http://$IP:2380" \
-     --listen-client-urls "http://$IP:2379" \
-     --listen-peer-urls "http://$IP:2380"
+     --listen-client-urls "http://0.0.0.0:2379" \
+     --listen-peer-urls "http://0.0.0.0:2380"
 
 
 ## Tests
@@ -120,9 +120,10 @@ docker run -it -v policy1/sample:/mnt debian cat /mnt/test
 # Swarm
 
 ## Start
-
-docker run -d -p 4000:4000 --name=swarm-manager swarm manage -H :4000 --replication --advertise $IP:4000 etcd://$IP:2379/nodes
-docker run -d --name=swarm-agent swarm join --addr=$IP:2376 etcd://$IP:2379/nodes
+export IP=
+export etcd_ip=
+docker run -d -p 4000:4000 --name=swarm-manager swarm manage -H :4000 --replication --advertise $IP:4000 etcd://$etcd_ip:2379/nodes
+docker run -d --name=swarm-agent swarm join --addr=$IP:2376 etcd://$etcd_ip:2379/nodes
 
 
 ## Test
