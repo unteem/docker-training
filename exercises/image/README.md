@@ -1,4 +1,4 @@
-# build an immutable docker image
+# Build an immutable docker image
 
 Build an nginx docker image with your personal index.html.
 (default index.html in nginx is located in /usr/share/nginx/html)
@@ -17,7 +17,7 @@ The objective is to build an image that would copy current behaviour of "echo" c
 It should by default echo "Hello world".
 If we pass arguments, it would echo what we pass.
 
-# build an image to serve this presentation
+# Build an image to serve this presentation
 
 This presentation is in html and can be served by grunt.
 Grunt is a tool to automatize web development.
