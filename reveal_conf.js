@@ -3,6 +3,7 @@ filename = filename.substring(0,filename.indexOf('.'))
 
 selector = document.querySelector('section'); 
 selector.dataset.markdown = filename + '.md';
+document.title = filename;
 // Full list of configuration options available at:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
