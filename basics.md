@@ -63,14 +63,14 @@ https://hub.docker.com
 
 ## image/layer/registry/container
 
-`docker run debian:jessie echo hello world`
+`docker run alpine:3.5 echo hello world`
 
 
 ## Dockerfile
 
 ```bash
 cat > Dockerfile <<EOF
-FROM debian:jessie
+FROM alpine:3.5
 CMD echo hello world
 EOF
 

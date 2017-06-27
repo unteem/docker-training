@@ -45,7 +45,7 @@ docker volumes
 
 Start an nginx container in detach mode:
 
-`docker run -d nginx`
+`docker run -d nginx:alpine`
 
 Find it's name and exec a bash on its side.
 Cat the current index.html.
