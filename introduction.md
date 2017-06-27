@@ -1,4 +1,4 @@
-# Mastering Docker
+# Docker Introduction
 
 ### [Pierre Ozoux](https://microblog.pierre-o.fr/)
 
@@ -8,9 +8,10 @@
 
 # Objectives of the session
 
- - Have a full CI/CD pipeline
- - one commit -> one docker deploy
- - and this runs on a cluster
+ - terminology
+ - problem solved by docker
+ - understand how to build a basic image
+ - know the basic commands
 
 
 
@@ -45,13 +46,6 @@ Platform as a Service
 Software as a Service
 
 (basecamp, gmail, impots.gouv.fr)
-
-
-# FSaaS
-
-Free Software as a Service :)
-
-(Nextcloud, WordPress..)
 
 
 
