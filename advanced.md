@@ -103,7 +103,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 ```
 
-Like on [nginx](https://github.com/nginxinc/docker-nginx/blob/master/stable/jessie/Dockerfile#L22-L23)
+Like on [nginx](https://github.com/nginxinc/docker-nginx/blob/master/stable/alpine/Dockerfile#L133-L134)
 
 
 ## Log file

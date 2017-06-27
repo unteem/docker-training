@@ -49,7 +49,7 @@ https://github.com/docker-library/official-images/
 
 ### Dockerfile
 
-+ starts to be broadly adopted
++ ~~starts to be~~ is broadly adopted
 + layers
 
 

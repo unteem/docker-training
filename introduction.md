@@ -2,9 +2,7 @@
 
 ### [Pierre Ozoux](https://microblog.pierre-o.fr/)
 
-28 Septembre 2016
-
-(Powered by docker)
+27 June 2017
 
 
 
@@ -199,17 +197,9 @@ Run admin/management tasks as one-off processes
 
  - BSD Jail
  - Solaris Zones
- - LXC / OpenVZ
- - Docker/rkt/nspawn
-
-
-## What is Docker?
-
-"Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications.
-Docker enables apps to be quickly assembled from components and eliminates the friction between development, QA, and production environments.
-As a result, IT can ship faster and run the same app, unchanged, on laptops, data center VMs, and any cloud."
-
-From docker's website. 
+ - Linux containers (contributed by Google 2008)
+  - LXC / OpenVZ
+  - docker/rkt/nspawn
 
 
 ## Docker is:
