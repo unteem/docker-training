@@ -15,6 +15,13 @@ docker commit
 ```
 
 
+## tag
+
+```
+docker tag old_tag new_tag
+```
+
+
 We'll not detail this one because we are DevOps.
 
 
@@ -32,7 +39,36 @@ COPY
 CMD / ENTRYPOINT
 
 
+## Advanced Dockerfile
+
+USER
+
+ONBUILD
+
+WORKDIR
+
+VOLUME
+
+
+## docker build
+
+```
+docker build -t registry/image:tag [-f Dockerfile] /path/to/conext 
+```
+
+
 ## best practices
+
+- layers (space / caching)
+- small
+- minimal
+- user / not root
+- base image (official/organisation)
+- .dockerignore
+- use tags
+
+
+## More bast practices
 
 https://docs.docker.com/articles/dockerfile_best-practices/
 
@@ -54,4 +90,8 @@ https://github.com/docker-library/official-images/
 
 
 
-# Your turn!
+## Exercise!
+
+```
+cd exercises/image
+```

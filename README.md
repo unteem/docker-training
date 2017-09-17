@@ -3,7 +3,7 @@
 You can start the presentation with docker:
 
 ```
-docker run -v ${PWD}:/usr/share/nginx/html -p 80:80 nginx
+docker run -v ${PWD}:/usr/share/nginx/html -p 80:80 nginx:alpine
 ```
 
 and go to [http://localhost](http://localhost) to see it.

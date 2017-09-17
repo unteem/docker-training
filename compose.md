@@ -65,10 +65,7 @@ networks:
 
 ## Nice pattern for environment
 
-put an `env` file in the root of project.
-Make it load in your env, and `docker-compose up`.
-
-For instance: https://github.com/indiehosters/libre.sh/blob/master/unit-files/u%40.service#L15
+put an `.env` file in the root of project.
 
 
 ## For secret management
@@ -90,4 +87,8 @@ docker-compose exec
 
 
 
-## Your turn!
+## Exercise!
+
+```
+cd exercises/compose
+```

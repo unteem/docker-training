@@ -1,19 +1,36 @@
 # Runtime
 
-`docker run [options] image [command]`
+
+`docker run [options] registry/image:tag [command]`
 
 options:
+ - -p [[IP]:[HOST_PORT]]:CONTAINER_PORT
+ - -v /host/path:/container/path
  - --name
  - -it
  - --rm
- - -p
+ - -d
 
 [reference](http://docs.docker.com/reference/run/)
+
+
+
+# some basic docker commands
+
+ - ps - list container
+ - inspect - get details about a container
 
 
 ## Exercise!
 
 ```
-git clone https://github.com/pierreozoux/docker-training
 cd exercises/runtime
 ```
+
+
+
+## Advanced run options
+
+ - --user
+ - --network
+ - -e/--environment 

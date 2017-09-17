@@ -1,38 +1,25 @@
-# make your first docker-compose
+# Redis
 
-This first docker-compose is exactly what we built previously: grunt + nginx.
+Create a simple docker-compose file that start a small redis.
 
-Make a docker-compose.yml file to start a web server (nginx) and a grunt "application" server to serve this presentation.
+# Network
 
-When issuing `docker-compose up` it should start the full stack, create the appropriate networks.
+Create an isolated network, called backed,  and put the redis in it.
+Create another isolated network called web.
 
-# Moby Couter
+# Postgres
 
-From the rest of the training, we'll use the application moby counter.
-(it is located in exercises/moby-counter)
+Add a small postgres container to the network.
 
-## Start it
+# Discourse
 
-And try it locally.
-(docker-compose up)
+Add our disourse service to the web and backend network.
+Use the build key to define this service.
 
-## Migrate to v2
+# Make sure it works
 
-Migrate the version of compose from v1 to v2 (with isolated networks).
-(Check [documentation](https://docs.docker.com/compose/compose-file/#/upgrading))
+Exec into the discourse container with the discourse user and make sure you can compile assets.
 
-Start it and make sure it is working locally.
-Try to access it from your peers.
+# volumes and ports
 
-Optional:
-Make the data persistent for redis.
-(with named volume)
-(Check redis image's documentation on the hub)
-
-## Start to build the ci/cd pipeline
-
-Just write down what is necessary to:
- - build docker image
- - deploy to your local docker
-
-It will be the skeleton of our pipeline.
+Add volumes to persist the db and the assets, and expose discourse it to the port 80 of your host.

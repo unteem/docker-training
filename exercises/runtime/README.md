@@ -1,13 +1,18 @@
-# Start a container
+# Start a web server in a container
 
- - start an nginx container (use docker run)
- - see the default nginx html page
+ - start a (small) nginx container (use docker run)
+ - list running containers
+ - inspect the nginx container (`docker inspect`)
+  - with the container name
+  - with the container hash
+ - curl the default nginx html page
   - with host port mapping (-p)
   - with container IP (use inspect to get local IP)
  - mount the current index.html instead of the default one (situated in /usr/share/nginx/html) (-v)
+ - expose the nginx to the Private IP of your host on the port 80
  - try to reach your peer web server!
 
-## Help
+# Help
 
 Use the Hub luke:
 

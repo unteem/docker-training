@@ -1,8 +1,8 @@
-# Docker Introduction
+# Docker
 
 ### [Pierre Ozoux](https://microblog.pierre-o.fr/)
 
-27 June 2017
+11 September 2017
 
 
 
@@ -10,8 +10,38 @@
 
  - terminology
  - problem solved by docker
- - understand how to build a basic image
- - know the basic commands
+ - understand containers
+ - know how to build a docker image
+ - manage volumes and networks
+ - be capable to compose applications
+
+
+# Program
+
+ - installation
+ - basics
+ - runtime
+ - image
+ - networks
+ - volumes
+ - builder
+ - advanced
+ - compose
+ - wrapup
+
+
+# Methodology
+
+ - presentation
+ - hands on
+ - exercises
+
+
+# meta
+
+```
+git clone https://github.com/pierreozoux/docker-training
+```
 
 
 
@@ -73,6 +103,8 @@ Unnecessary automation!
 ## Dev and Ops
 
 Infrastructure as Code
+
+CI/CD
 
 Note:
 You manage your Infrastructure like you manage your code.
@@ -200,7 +232,7 @@ Run admin/management tasks as one-off processes
 
 - An open source tool that places a layer on top of Linux containers (cgroups and namespaces) to make it simple to package and ship complex apps
 - A tool for creating a layered filesystem; each layer is versioned and can be shared across running instances, making for much more lightweight deployments
-- A company behind the project, as well as a site called the "Docker Hub" for sharing containers
+- A company behind the project, as well as a site called the "Docker Hub" for sharing containers - Docker
 
 from [docker-jumpstart](https://github.com/odewahn/docker-jumpstart)
 
@@ -262,3 +294,7 @@ from [docker-jumpstart](https://github.com/odewahn/docker-jumpstart)
 ## Separation of concerns
 
 ![separation](/docker-img/separation.png)
+
+
+
+# 

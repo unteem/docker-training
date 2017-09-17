@@ -1,12 +1,11 @@
 # Namespace
 
-Start a bash inside a debian interactive container and run the following commands:
+Start a bash inside an alpine interactive container and run the following commands:
 
 ```
-docker run -it debian bash
+docker run -it alpine bash
 # install ifconfig
-apt-get update
-apt-get install -y net-tools
+apk --no-cache add net-tools
 ```
 
 (Compare to what you see on the host)
@@ -16,20 +15,6 @@ apt-get install -y net-tools
  - USER: (We'd need to configure docker daemon for that)
  - Mount: df -h
  - UTS: hostname
-
-
-
-# data
-
-Add the following line on our grunt Dockerfile:
-
-```
-VOLUME /usr/src/app
-```
-
-rebuild your image and recreate your container.
-
-What do you see under `docker volume ls` command?
 
 # explore 
 
@@ -53,14 +38,25 @@ Cat the current index.html.
 
 `docker exec --help`
 
+# data
+
+Add the following line on our nginx Dockerfile:
+
+```
+VOLUME /etc/nginx/
+```
+
+rebuild your image and recreate your container.
+
+What do you see under `docker volume ls` command?
+
 # Network
 
-The objective is to serve grunt though nginx proxy.
+The objective is to serve nginx though nginx proxy.
 
 Create an nginx image with the configuration in this folder (nginx configuration is situated in /etc/nginx/nginx.conf).
 
-Create an nginx container to proxy the grunt conainer.
+Create an nginx container to proxy the nginx conainer.
 The 2 containers have to be in an isolated network.
-Nginx container needs to be linked to the grunt container.
 
 help: https://docs.docker.com/engine/userguide/networking/work-with-networks/

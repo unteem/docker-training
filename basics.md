@@ -23,6 +23,11 @@ You can think of it as the folder where you chroot.
 [source](http://docs.docker.com/terms/image/)
 
 
+## Create one with debootstrap
+
+[create a debian docker image](https://docs.docker.com/engine/userguide/eng-image/baseimages/)
+
+
 ## Layer
 
 A layer is a set of data you can add to another layer.
@@ -40,9 +45,14 @@ You can think of it as the commit in a git history
 A container is a running image.
 
 
+![docker layers](/images/docker-filesystems-multilayer.png)
+
+
 ## Dockerfile
 
 A Dockerfile is a text document that contains all the commands you would normally execute manually in order to build a Docker image.
+
+[example](https://github.com/indiehosters/docker-git/blob/master/Dockerfile)
 
 [source](http://docs.docker.com/reference/builder/)
 
@@ -59,6 +69,8 @@ https://hub.docker.com
 
 
 ## Illustration of Basics
+
+Hands on!
 
 
 ## image/layer/registry/container

@@ -4,11 +4,14 @@
 
 ## Namespace
 
+Hands on!
+
  - NET
  - PID
  - USER
  - Mount
  - UTS
+
 
 
 
@@ -48,52 +51,17 @@ If you don't it is fine, Namespace translations!
 
 
 
-## Data
-
-
-### Docker volume
-
-You can create volumes managed by docker.
-
-SDS
-
-
-From Dockerfile
-
-`VOLUME /my/path`
-
-
-From runtime
-
-`docker volume create --name=my_name`
-
-`docker run -v mon_nom:/path_container ...`
-
-
-Support for drivers \o/ (Ceph, glusterfs...)
-
-
-### Data container
-
-You could link a container that will just contain the data.
-
-`--volumes-from`
-
-(no longer recommended, but you might see it)
-
-
-### Host Mount
-
-`docker run -v /host/path:/guest/path debian cat /guest/path/file`
-
-
-
 # Logs
 
 
 ## Stdout/Stderr
 
 The recommended!
+
+
+## get logs from a container
+
+Hands on!
 
 
 ## Special Log file
@@ -111,7 +79,7 @@ Like on [nginx](https://github.com/nginxinc/docker-nginx/blob/master/stable/alpi
 You could mount a host file where your process will log
 
 
-## log driver
+## log facility
 
 complicated
 
@@ -164,11 +132,15 @@ That's what some people don't like
 
 how to manage locally images, containers and volumes!
 
+
+Hands on!
+
+```
 docker images
-
 docker ps
-
 docker volumes
+```
+
 
 https://microblog.pierre-o.fr/2015/i-know-how-to-clean-docker
 
@@ -180,41 +152,4 @@ https://github.com/spotify/docker-gc
 
 execute a process on the side of the main process.
 
-
-
-# Networks
-
-You can now create and manage networks from Docker.
-
-SDN
-
-```
-docker network ls
-               create/rm
-               connect/disconnect             
-```
-
-
-## Features
-
- - automatic name resolution using DNS
- - automatic secured isolated environment for the containers in a network
- - ability to dynamically attach and detach to multiple networks
-
-
-## Overlay
-
-An overlay network can span multiple hosts running their own engines.
-
-Needs a key-value store (Consul, Etcd, and ZooKeeper)
-
-Supports encryption \o/
-
-
-## Documentation
-
-https://docs.docker.com/engine/userguide/networking/work-with-networks/
-
-
-
-# Your turn!
+Hands on!
