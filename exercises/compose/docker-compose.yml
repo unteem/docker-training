@@ -1,0 +1,49 @@
+version: '2'
+services:
+  redis:
+    image: redis:alpine
+    networks:
+    - back
+  postgres:
+    image: postgres:alpine
+    environment:
+    - POSTGRES_USER=discourse
+    - POSTGRES_DB=discourse
+    - POSTGRES_PASSWORD=discourse
+    networks:
+    - back
+    volumes:
+    - pg_data:/var/lib/postgresql/data
+  discourse:
+    build: .
+    depends_on:
+    - postgres
+    - redis
+    - assets
+    - migrate
+    volumes:
+    - ./assets:/home/discourse/discourse/public/assets/
+    networks:
+    - back
+    - web
+  assets:
+    image: discourse_discourse
+    command: rake assets:precompile 
+    volumes:
+    - ./assets:/home/discourse/discourse/public/assets/
+    depends_on:
+    - redis
+    networks:
+    - back
+  migrate:
+    image: discourse_discourse
+    command: rake db:migrate
+    depends_on:
+    - postgres
+    networks:
+    - back
+networks:
+  back:
+  web:
+volumes:
+  pg_data:
