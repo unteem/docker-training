@@ -2,7 +2,7 @@
 
 ### [Pierre Ozoux](https://microblog.pierre-o.fr/)
 
-18 September 2017
+19 Novembre 2017
 
 
 
@@ -102,13 +102,16 @@ Unnecessary automation!
 
 ## Dev and Ops
 
-Infrastructure as Code
-
 CI/CD
 
 Note:
 You manage your Infrastructure like you manage your code.
 Feature request, bug tracking, Continuous deployment
+
+
+## SRE
+
+Infrastructure as Code
 
 
 
