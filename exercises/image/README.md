@@ -35,7 +35,7 @@ git checkout v1.9.0.beta9
 
 (commit while progressing to make sure you track your progresses)
 
-2. create the dockerfile based on `debian`
+2. create the dockerfile based on `ruby`
 
 Here are the instructions to install discourse in a fresh debian environment:
 Intall the project in the folder discourse in the home of user discourse.
@@ -47,7 +47,7 @@ Add latest nodejs repo in debian:
 curl --silent --location https://deb.nodesource.com/setup_8.x | bash -
 ```
 
-Intall Following building dependencies:
+Intall Following building dependencies (`apt-get update && apt-get install -y`):
 ```
 autoconf
 libbz2-dev
@@ -85,7 +85,7 @@ make install
 
 ```
 export PNGQUANT_VERSION=2.8.0
-git clone -b $VERSION --single-branch https://github.com/pornel/pngquant
+git clone -b $PNGQUANT_VERSION --single-branch https://github.com/pornel/pngquant
 cd pngquant
 make && make install
 ```
