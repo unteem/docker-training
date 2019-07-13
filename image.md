@@ -68,7 +68,7 @@ docker build -t registry/image:tag [-f Dockerfile] /path/to/conext
 - use tags
 
 
-## More bast practices
+## More best practices
 
 https://docs.docker.com/articles/dockerfile_best-practices/
 
