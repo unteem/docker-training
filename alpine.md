@@ -31,7 +31,7 @@ It is now used in many official images.
 
 
 
-## Exrcises
+## Exercises
 
 ```
 cd exercises/alpine
