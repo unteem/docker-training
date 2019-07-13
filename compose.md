@@ -21,7 +21,7 @@ http://docs.docker.com/compose/install/
 docker-compose.yml
 
 ```
-version: '2'
+version: '3'
 services:
   web:
     build: .

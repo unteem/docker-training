@@ -75,14 +75,14 @@ Hands on!
 
 ## image/layer/registry/container
 
-`docker run alpine:3.5 echo hello world`
+`docker run alpine:3.10 echo hello world`
 
 
 ## Dockerfile
 
 ```bash
 cat > Dockerfile <<EOF
-FROM alpine:3.5
+FROM alpine:3.10
 CMD echo hello world
 EOF
 
