@@ -8,17 +8,19 @@
 ## Command line
 
 ```bash
-docker run -it debian /bin/bash
-cat 'hello world' > /tmp/hello
+docker run --name redis -d redis
+docker exec -it redis /bin/bash
+useradd -g redis example
 exit
-docker commit
+docker commit upbeat_panini testredis:example
+docker images testredis:example  
 ```
 
 
 ## tag
 
 ```
-docker tag old_tag new_tag
+docker tag testredis:example  testredis:latest 
 ```
 
 
@@ -28,7 +30,7 @@ We'll not detail this one because we are DevOps.
 
 ## Dockerfile
 
-[Command reference](http://docs.docker.com/reference/builder/)
+[Command reference](https://docs.docker.com/engine/reference/builder/)
 
 FROM
 
@@ -53,7 +55,7 @@ VOLUME
 ## docker build
 
 ```
-docker build -t registry/image:tag [-f Dockerfile] /path/to/conext 
+docker build -t registry/image:tag [-f Dockerfile] /path/to/context 
 ```
 
 
@@ -70,7 +72,7 @@ docker build -t registry/image:tag [-f Dockerfile] /path/to/conext
 
 ## More best practices
 
-https://docs.docker.com/articles/dockerfile_best-practices/
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
 
 http://crosbymichael.com/dockerfile-best-practices.html
 

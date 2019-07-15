@@ -6,19 +6,25 @@
 
 You can create volumes managed by docker.
 
-SDS
+SDS - Software-defined storage
 
 
 From Dockerfile
 
-`VOLUME /my/path`
+```
+VOLUME /my/path
+```
 
 
 From runtime
 
-`docker volume create --name=my_name`
+```
+docker volume create --name=my_name
+```
 
-`docker run -v mon_nom:/path_container ...`
+```
+docker run -v mon_nom:/path_container ...
+```
 
 
 Support for drivers \o/ (Ceph, glusterfs...)
@@ -29,7 +35,10 @@ Support for drivers \o/ (Ceph, glusterfs...)
 
 You could link a container that will just contain the data.
 
-`--volumes-from`
+```
+--volumes-from
+```
+
 
 (no longer recommended, but you might see it)
 
@@ -37,7 +46,9 @@ You could link a container that will just contain the data.
 
 ### Host Bind  Mount
 
-`docker run -v /host/path:/guest/path debian cat /guest/path/file`
+```
+docker run -v /host/path:/guest/path debian cat /guest/path/file
+```
 
 
 

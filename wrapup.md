@@ -31,9 +31,9 @@ https://github.com/veggiemonk/awesome-docker/
 
 
 
-## futur ~~challenges~~
+## future ~~challenges~~
 
-The docker futur is bright, here is what comes next on your road!
+The docker future is bright, here is what comes next on your road!
 
  - k8s ~~vs swarm~~
  - ~~volume/data/db challenge~~

@@ -3,7 +3,8 @@
 
 You can now create and manage networks from Docker.
 
-SDN
+
+SDN - Software-defined networking
 
 ```
 docker network ls
@@ -21,7 +22,7 @@ docker network ls
 
 ## Documentation
 
-https://docs.docker.com/engine/userguide/networking/work-with-networks/
+https://docs.docker.com/network/
 
 
 

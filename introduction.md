@@ -1,8 +1,8 @@
 # Docker
 
-### [Pierre Ozoux](https://microblog.pierre-o.fr/)
+### Timothée Gosselin
 
-19 Novembre 2017
+15-16 Juillet 2019
 
 
 
@@ -30,6 +30,15 @@
  - wrapup
 
 
+# Methdology
+
+Tell me and I forget.
+
+Teach me and I remember.
+
+Involve me and I learn.
+
+
 # Methodology
 
  - presentation
@@ -42,7 +51,6 @@
 ```
 git clone https://github.com/pierreozoux/docker-training
 ```
-
 
 
 # A Brief history of the cloud 
@@ -100,6 +108,15 @@ Unnecessary automation!
 [source: devopsreactions.tumblr.com](http://devopsreactions.tumblr.com/post/117760555890/unnecessary-automation)
 
 
+## DevOps Pilars
+
+1. Reduce organizational silos
+2. Accept failure as normal
+3. Implement gradual changes
+4. Leverage tooling and automation
+5. Measure everything
+
+
 ## Dev and Ops
 
 CI/CD
@@ -109,7 +126,7 @@ You manage your Infrastructure like you manage your code.
 Feature request, bug tracking, Continuous deployment
 
 
-## SRE
+## SRE - Site Reliability Engineering
 
 Infrastructure as Code
 
@@ -261,42 +278,42 @@ from [docker-jumpstart](https://github.com/odewahn/docker-jumpstart)
 
 ## The challenge
 
-![challenge](/docker-img/the-challenge.png)
+![challenge](/docker-img/the-challenge-white-bg.png)
 
 
 ## The matrix from hell
 
-![matrixhell](/docker-img/the-matrix-from-hell.png)
+![matrixhell](/docker-img/the-matrix-from-hell-white-bg.png)
 
 
 ## Cargo transport pre 1960
 
-![cargo](/docker-img/cargo.png)
+![cargo](/docker-img/cargo-white-bg.png)
 
 
 ## Also a matrix from hell!
 
-![also](/docker-img/also.png)
+![also](/docker-img/also-white-bg.png)
 
 
 ## Solution: Intermodal shipping container
 
-![solution](/docker-img/solution.png)
+![solution](/docker-img/solution-white-bg.png)
 
 
 ## Docker is a container system for code
 
-![docker](/docker-img/shipping.png)
+![docker](/docker-img/shipping-white-bg.png)
 
 
-## Docker eliminated the matrix from hell
+#### Docker eliminated the matrix from hell
 
-![eliminates](/docker-img/eliminates.png)
+![eliminates](/docker-img/eliminates-white-bg.png)
 
 
 ## Separation of concerns
 
-![separation](/docker-img/separation.png)
+![separation](/docker-img/separation-white-bg.png)
 
 
 
