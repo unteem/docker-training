@@ -74,8 +74,7 @@ nodejs
 
 Compile the following packages:
 ```
-export GIFSICLE_VERSION=1.91
-curl -O http://www.lcdf.org/gifsicle/gifsicle-$GIFSICLE_VERSION.tar.gz
+curl -O http://www.lcdf.org/gifsicle/gifsicle-1.91.tar.gz
 tar zxf gifsicle-$VERSION.tar.gz
 cd gifsicle-$GIFSICLE_VERSION
 ./configure
@@ -85,8 +84,7 @@ make install
 
 
 ```
-export PNGQUANT_VERSION=2.12.1
-git clone -b $PNGQUANT_VERSION --single-branch https://github.com/pornel/pngquant
+git clone -b 2.12.1 --single-branch https://github.com/pornel/pngquant
 cd pngquant
 make && make install
 ```
