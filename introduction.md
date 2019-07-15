@@ -49,7 +49,7 @@ Involve me and I learn.
 # meta
 
 ```
-git clone --recurse-submodules https://github.com/pierreozoux/docker-training
+git clone --recurse-submodules https://github.com/unteem/docker-training
 ```
 
 
